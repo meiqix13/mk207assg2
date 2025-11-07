@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="home" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental - Electric Car Rentals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">⚡ AZoom</span>
+                <span class="tagline">Electric Car Rental</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cars.html">Book Now</a></li>
+                <li><a href="return.html">Return Car</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section style="padding: 5rem 0; background: var(--bg-light); min-height: calc(100vh - 70px);">
+        <div class="container">
+            <div class="form-container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Create Your Account</h2>
+                    <p style="color: var(--text-light); margin-top: 0.5rem;">Join AZoom and start renting electric vehicles today!</p>
+                </div>
+                
+                <div id="registerError" class="error-message" style="display: none; background: #fee2e2; color: #991b1b; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;"></div>
+                
+                <form onsubmit="return handleRegistration(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="licenseNumber">Driver's License Number *</label>
+                        <input type="text" id="licenseNumber" placeholder="DL123456789" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" placeholder="Min. 6 characters" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password *</label>
+                            <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                            <input type="checkbox" required style="margin-top: 3px;">
+                            <span>I agree to the <a href="tnc.html" style="color: var(--primary-color);">Terms and Conditions</a> and <a href="pp.html" style="color: var(--primary-color);">Privacy Policy</a></span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                            <input type="checkbox">
+                            <span>Subscribe to our newsletter for exclusive offers</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem; margin-top: 0.5rem;">
+                        Create Account
+                    </button>
+                </form>
+
+                <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                    <p style="color: var(--text-light);">
+                        Already have an account? 
+                        <a href="login.html" style="color: var(--primary-color); font-weight: 600; text-decoration: none;">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>⚡ AZoom Car Rental</h3>
+                    <p>Your trusted partner for electric vehicle rentals. Drive green, drive clean.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Book Now</a></li>
+                        <li><a href="return.html">Return Car</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                        <li><a href="index.html">FAQs</a></li>
+                        <li><a href="tnc.html">Terms & Conditions</a></li>
+                        <li><a href="pp.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +65 8111 0000</li>
+                        <li>✉️ azoomrental@gmail.com</li>
+                        <li>🕒 Mon-Sun: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AZoom Car Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="home" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental - Electric Car Rentals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">⚡ AZoom</span>
+                <span class="tagline">Electric Car Rental</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cars.html">Book Now</a></li>
+                <li><a href="return.html">Return Car</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 250px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Choose a Car</h1>
+            <p>Browse our available models and select the car that best fits your travel needs.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 3rem; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px;">
+                    CAR SELECTION PROCESS
+                </h2>
+
+                <!-- Return Process Timeline -->
+                <div style="background: var(--bg-card); padding: 2rem; border-radius: 15px; border: 1px solid var(--border-color); margin-bottom: 3rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 2rem; text-transform: uppercase; text-align: center;">STEPS FOR CHOOSING A CAR</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                        <div style="text-align: center;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); margin: 0 auto 1rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--bg-dark); font-weight: bold; box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);">
+                                1
+                            </div>
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Determine Your Needs</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Decide the type of car you need based on passenger count, luggage, and trip distance.</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); margin: 0 auto 1rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--bg-dark); font-weight: bold; box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);">
+                                2
+                            </div>
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Review Vehicle Details</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Check vehicle specifications, including range, charging time (if electric), and extra amenities.</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); margin: 0 auto 1rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--bg-dark); font-weight: bold; box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);">
+                                3
+                            </div>
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Make Your Selection</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Choose the car and proceed with the reservation or booking process.</p>
+                        </div>
+                    </div>
+                </div>
+
+    <section class="featured-cars" id="featured-cars">
+        <div class="container">
+            <h2 class="section-title">Choose Your Electric Vehicle</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">
+                Select your preferred electric car and start your reservation
+            </p>
+
+            <div class="cars-grid">
+                <!-- Tesla Model 3 -->
+                <div class="car-card clickable-card" onclick="selectCar('tesla-model3')">
+                    <div class="car-image-container">
+                        <img src="images/tesla.jpg" alt="Tesla Model 3" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model 3</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 358 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> Autopilot, Premium sound, Navigation
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$89</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('tesla-model3')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nissan Leaf -->
+                <div class="car-card clickable-card" onclick="selectCar('nissan-leaf')">
+                    <div class="car-image-container">
+                        <img src="images/nissan.jpg" alt="Nissan Leaf" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Nissan Leaf</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 270 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> ProPILOT Assist, Apple CarPlay, LED lights
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$65</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('nissan-leaf')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hyundai Kona Electric -->
+                <div class="car-card clickable-card" onclick="selectCar('hyundai-kona')">
+                    <div class="car-image-container">
+                        <img src="images/hyundai.jpg" alt="Hyundai Kona Electric" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Hyundai Kona Electric</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 415 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> Smart cruise, Wireless charging, Sunroof
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$75</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('hyundai-kona')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chevrolet Bolt EV -->
+                <div class="car-card clickable-card" onclick="selectCar('chevrolet-bolt')">
+                    <div class="car-image-container">
+                        <img src="images/chevrolet.jpg" alt="Chevrolet Blazer EV" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Chevrolet Bolt EV</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 417 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> Regen braking, DC fast charging, Camera
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$70</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('chevrolet-bolt')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volkswagen ID.4 -->
+                <div class="car-card clickable-card" onclick="selectCar('volkswagen-id4')">
+                    <div class="car-image-container">
+                        <img src="images/vw.jpg" alt="Volkswagen ID.4" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Volkswagen ID.4</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 400 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> IQ.DRIVE, AR HUD, Voice control
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$80</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('volkswagen-id4')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMW i4 -->
+                <div class="car-card clickable-card" onclick="selectCar('bmw-i4')">
+                    <div class="car-image-container">
+                        <img src="images/bm.jpg" alt="BMW i4" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW i4</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 482 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> Sport mode, Curved display, Premium leather
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$95</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('bmw-i4')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>⚡ AZoom Car Rental</h3>
+                    <p>Your trusted partner for electric vehicle rentals. Drive green, drive clean.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Book Now</a></li>
+                        <li><a href="return.html">Return Car</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                        <li><a href="index.html">FAQs</a></li>
+                        <li><a href="tnc.html">Terms & Conditions</a></li>
+                        <li><a href="pp.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +65 8111 0000</li>
+                        <li>✉️ azoomrental@gmail.com</li>
+                        <li>🕒 Mon-Sun: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AZoom Car Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

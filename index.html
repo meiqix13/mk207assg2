@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="home" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental - Electric Car Rentals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">⚡ AZoom</span>
+                <span class="tagline">Electric Car Rental</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cars.html">Book Now</a></li>
+                <li><a href="return.html">Return Car</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Drive the Future with Electric Cars</h1>
+            <p>Eco-friendly, cost-effective, and convenient electric vehicle rentals</p>
+            <div class="hero-buttons">
+                <a href="#featured-cars" class="btn btn-primary">Reserve Your Car</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose AZoom?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>100% Electric</h3>
+                    <p>All our vehicles are fully electric, reducing your carbon footprint and supporting sustainability</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy Booking</h3>
+                    <p>Simple online reservation system - book your car in just a few clicks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section class="featured-cars" id="featured-cars">
+        <div class="container">
+            <h2 class="section-title">Choose Your Electric Vehicle</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">
+                Select your preferred electric car and start your reservation
+            </p>
+
+            <div class="cars-grid">
+                <!-- Volkswagen ID.4 -->
+                <div class="car-card clickable-card" onclick="selectCar('volkswagen-id4')">
+                    <div class="car-image-container">
+                        <img src="images/vw.jpg" alt="Volkswagen ID.4" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Volkswagen ID.4</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 400 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> IQ.DRIVE, AR HUD, Voice control
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$80</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('volkswagen-id4')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMW i4 -->
+                <div class="car-card clickable-card" onclick="selectCar('bmw-i4')">
+                    <div class="car-image-container">
+                        <img src="images/bm.jpg" alt="BMW i4" class="car-image-photo">
+                        <div class="car-badge">⚡ ELECTRIC</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW i4</h3>
+                        <p class="car-specs">
+                            <strong>Range:</strong> 482 km | <strong>Seats:</strong> 5 | <strong>Transmission:</strong> Auto<br>
+                            <strong>Features:</strong> Sport mode, Curved display, Premium leather
+                        </p>
+                        <div class="car-pricing">
+                            <div class="price">
+                                <span class="price-amount">$95</span>
+                                <span class="price-period">/day</span>
+                            </div>
+                            <button class="btn btn-small btn-primary" onclick="event.stopPropagation(); selectCar('bmw-i4')">Select Car</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="cars.html" class="btn btn-outline">View Complete Fleet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Complete Rental Process</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">
+                Our streamlined 5-step process ensures a smooth electric vehicle rental experience
+            </p>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">1</div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">💳</div>
+                        <h3>Reserve Your Car Online</h3>
+                        <p class="step-location">Via AZoom Car Rental Website</p>
+                        <p class="step-description">
+                            Choose your electric vehicle, select dates, and complete your reservation using a credit card. 
+                            You'll receive instant confirmation with booking details and pickup instructions.
+                        </p>
+                        <div class="step-details">
+                            <span class="detail-badge">✓ Credit Card Required</span>
+                            <span class="detail-badge">✓ Instant Confirmation</span>
+                            <span class="detail-badge">✓ Online Payment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">2</div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">🏢</div>
+                        <h3>Rent Car at Office</h3>
+                        <p class="step-location">At AZoom Car Rental Office</p>
+                        <p class="step-description">
+                            Visit our branch office with your booking confirmation and driver's license. Our staff will 
+                            complete the rental agreement, inspect the vehicle with you, and hand over the keys.
+                        </p>
+                        <div class="step-details">
+                            <span class="detail-badge">✓ Vehicle Walkthrough</span>
+                            <span class="detail-badge">✓ Keys Handover</span>
+                        </div>
+                        <a href="branches.html" class="step-link">Browse our branches →</a>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">3</div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">🅿️</div>
+                        <h3>Return Car at Designated Park</h3>
+                        <p class="step-location">At Designated Car Park</p>
+                        <p class="step-description">
+                            Return the vehicle to our designated parking area by the agreed time. Park in any available 
+                            AZoom bay, return keys to staff and wait for the inspection.
+                        </p>
+                        <div class="step-details">
+                            <span class="detail-badge">✓ Designated Parking</span>
+                            <span class="detail-badge">✓ 24/7 Return Available</span>
+                        </div>
+                        <a href="branches.html" class="step-link">Browse our branches →</a>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-indicator">
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">💰</div>
+                        <h3>Pay Final Bill</h3>
+                        <p class="step-location">Complete Payment Processing</p>
+                        <p class="step-description">
+                            Receive your final invoice including rental cost and any damage charges found during inspection. 
+                            Payment is automatically processed to your credit card. Receipt sent via email.
+                        </p>
+                        <div class="step-details">
+                            <span class="detail-badge">✓ Rental Cost</span>
+                            <span class="detail-badge">✓ Damage Charges</span>
+                            <span class="detail-badge">✓ Email Receipt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Go Electric?</h2>
+            <p>Join thousands of satisfied customers who've made the switch to eco-friendly transportation</p>
+            <a href="booking.html" class="btn btn-primary btn-large">Start Your Reservation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>⚡ AZoom Car Rental</h3>
+                    <p>Your trusted partner for electric vehicle rentals. Drive green, drive clean.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Book Now</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="mailto:azoomrental@gmail.com">Contact Us</a></li>
+                        <li><a href="index.html">FAQs</a></li>
+                        <li><a href="tnc.html">Terms & Conditions</a></li>
+                        <li><a href="pp.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +65 8111 0000</li>
+                        <li>✉️ azoomrental@gmail.com</li>
+                        <li>🕒 Mon-Sun: 8am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AZoom Car Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
